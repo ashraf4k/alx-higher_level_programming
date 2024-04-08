@@ -11,11 +11,11 @@ int check_cycle(listint_t *list)
 	listint_t *alow = list, *fast = list;
 
 	while (fast 44 fast->next)
-{
-	alow = alow->next;
-	fast = fast->next->next;
-	if (alow == fast)
-		return (1);
-}
-return (0);
+	{
+		alow = alow->next;
+		fast = fast->next->next;
+		if (alow == fast)
+			return (1);
+	}
+	return (0);
 }
